@@ -1,0 +1,15 @@
+####################################################################################
+dotnet ef commad for adding migration and updating database
+IdentityServer4.EntotyFramewotk provides two dbcontext to work on congiguration element for ID server
+Like IdentityResource,ApiResource,Client,ApiScope
+Dbcontext are
+1.PersistedGrantDbContext
+2.ConfigurationDbContext
+
+Commands-:
+dotnet ef migrations add InitialIdentityServerPersistedGrantDbMigration -c PersistedGrantDbContext -o Data/Migrations/IdentityServer/PersistedGrantDb
+dotnet ef migrations add InitialIdentityServerConfigurationDbMigration -c ConfigurationDbContext -o Data/Migrations/IdentityServer/ConfigurationDb
+
+Dbcontext
+dotnet ef migrations add InitialApplicationDbcontext -c ApplicationDbContext -o Data/Migrations/ApplicationDb
+
